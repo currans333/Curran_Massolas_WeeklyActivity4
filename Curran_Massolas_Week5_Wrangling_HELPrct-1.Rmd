@@ -1,0 +1,105 @@
+---
+title: "Data wrangling - HELPrct"
+subtitle: "Week 5 Activity"
+author: "Shannon Curran and Sophie Massolas"
+date: "15 February 2026"
+output: 
+  html_notebook:
+    fig_height: 3
+    fig_width: 5
+---
+
+```{r message=FALSE}
+# Good practice - clear the working environment
+rm(list = ls())
+
+# Load required packages
+library(tidyverse)  # for data verbs such as group-by() & summarise()
+library(mosaicData) # includes the HELPrct data set 
+library(esquisse)   # includes the esquisser() interactive plot builder seen in Week 4
+
+# Load the HELPrct data from mosaicData package into our RStudio environment
+data("HELPrct", package = "mosaicData")
+
+# Use View(HELPrct) in the console to open a tab in RStudio and look at the raw data directly
+```
+
+
+## Data Description
+
+*TASK 1: Write a couple of sentences describing the `HELPrct` data. What is the setting for the data? What are they about?* 
+
+[hint: you can use the help in RStudio here since the data were loaded from an R package]
+
+
+
+
+## Basic Summaries with `summarise()` 
+
+*TASK 2: Produce an expression involving `summarize()` and `HELPrct` that will produce the following.*
+
+1. *number of people (cases) in `HELPrct` study*
+2. *combined total number of times in the past 6 months all the people in `HELPrct` entered a detox program (measured at baseline)* 
+3. *mean time (in days) to first use of any substance post-detox for all the people in `HELPrct`*
+
+
+
+```{r}
+
+```
+
+
+
+
+## Subgrouping with `group_by()` 
+
+*TASK 3: Repeat Task 2 above, but calculate the results group-by-group.  Show your code and write a sentence or two about what you observe in the results for each of the following:* 
+
+1. *males versus females*
+
+```{r}
+# males versus females
+
+```
+
+
+2. *homeless or not*
+
+```{r}
+# homeless or not
+
+```
+
+3. *substance*
+
+```{r}
+# substance
+
+```
+
+4. *break down the homeless versus housed further, by sex*
+
+```{r}
+# homeless versus housed broken down by sex
+
+```
+
+5. *break down the homeless versus housed further, by substance*
+
+```{r}
+# homeless versus housed broken down by substance
+
+```
+
+
+
+## TASK 4:
+
+*Include one or more interesting plots of the data involving at least 3 variables per plot. Write a few sentences to explain the story that your plot tells about these data.  You can use one of the relationships that you studied in Task 2, or you can explore a different group of variables in the `HELPrct` that show something interesting.  You should use the interactive tool `esquisser` but you must copy/paste the `ggplot2` code to create the plot here (i.e., do not embed a screenshot or image file).*  
+
+
+* Plots vary
+* Almost any plot that you want to post here would be fine as long as it involves at least 3 variables. For example, 
+    - a bivariate display like a scatterplot or line plot that uses color or facets for some third categorical variable.  
+    - a single quantitative variable could be shown as a density or violin plot, and then color and faceting could incorporate two categorical variables.  
+    - a combination of strategies above could easily incorporate 4 variables (2 quantitative; 2 categorical)
