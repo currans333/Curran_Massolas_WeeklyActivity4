@@ -31,7 +31,7 @@ data("HELPrct", package = "mosaicData")
 
 [hint: you can use the help in RStudio here since the data were loaded from an R package]
 
-
+The data comes from a clinical trial called Health Evaluation and Linkage to Primary Care (HELP) in which inpatient addicts without primary care physicians from a detoxification unit were randomly selected. They were then interviewed to establish a baseline and reinterviewed every 6 months for 2 years while receiving motivational intervention and care in hopes of linking patients to primary medical care.
 
 
 ## Basic Summaries with `summarise()` 
